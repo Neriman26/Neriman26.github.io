@@ -1,0 +1,115 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{background-color: #131a23;}
+.esashisse{margin-top:100px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40%;
+}
+body h1{color: white;}
+body h3{color: rgb(36, 38, 147);}
+.haqqimda{width: 20%;height: auto;color: white;}
+.bloklar{
+    display: flex;
+    gap: 10px;
+}
+.blok1 a{text-decoration: none;color: white;font-weight: bold;}
+.blok2 a{text-decoration: none;color: white;font-weight: bold;}
+.blok1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 64, 64);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}
+.blok1:hover{background-color: rgb(134, 130, 130);transform: scale(1.05);}
+.blok2:hover{background-color: rgb(163, 156, 255);transform: scale(1.05);}
+.blok2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 79, 235);
+    
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}
+.sosial a:hover{transform: scale(1.05);}
+
+.xett{background-color: rgb(58, 32, 58);height: 1px;width:50%;margin-top: 30px;}
+.yazi{color: white;font-weight: lighter;font-size:medium ;}
+
+.sosial a img{width: 50px; height: 50px;}
+.sosial{display: flex;gap: 40px;}
+
+.contactme{color: white;font-weight: bolder;}
+form{display: flex;flex-direction: column; gap: 10px;}
+.ortahisse{display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 50px;}
+.form1{display: flex; gap: 17px;width: 23.03%;}
+.form2{display: flex;flex-direction: column;gap: 10px;width: 98%;align-items: center;}
+.form1 input{height: 50px;color: white;background-color: #0f172a;border-radius: 5px;}
+.form2 input{height: 50px;width: 100%;background-color: #0f172a;border-radius: 5px;color: white;}
+.form2 textarea{height: 300px;width: 100%;background-color: #0f172a;border-radius: 5px;color: white;}
+.form2 button{height: 35px;width: 100%;background-color: rgb(113, 113, 227);border-radius: 5px;color: white;}
+.form2 button:hover{background-color: rgb(136, 136, 239);transform: scale(1.12);}
+@media (max-width: 800px){
+    .haqqimda{width: 35%;}
+    .body{display: flex;justify-content: center;align-items: center;}
+
+}
+@media (max-width: 350px){
+    .form1{display: flex;flex-direction: column;width: 100%;}
+    .haqqimda{width: 270px;}
+}
+
+.sonhisse{width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+
+.hisse1{display: flex;gap: 10px;}
+.hisse2{display: flex;gap: 10px;margin-top: 20px;}
+.project1{
+    background-color: #0b111d;
+    height: 200px;width: 300px;
+    border-style: solid;
+    border-radius: 10px;  
+}
+.project2{
+    background-color: #0b111d;
+    height: 200px;width: 300px;
+    border-style: solid;
+    border-radius: 10px;  
+}
+
+
+.project3{
+    background-color: #0b111d;
+    height: 200px;width: 300px;
+    border-style: solid;
+    border-radius: 10px;
+}
+.project4{
+    background-color: #0b111d;
+    height: 200px;width: 300px;
+    border-style: solid;
+    border-radius: 10px;   
+}
+.xett2{background-color: #1d2734;height: 1px;width: 50%;}
+.sonhisse h3{color: white;padding: 0 10px;}
+.sonhisse p{color: gray;padding: 0 10px;}
+.sonhisse a{text-decoration: none;color: rgb(19, 98, 125);padding: 0 10px;font-size: larger;}
+.sonhisse a:hover{color: #eaf0f7;}
+
+.sonhisse h1{padding-top: 100px;padding-bottom: 30px;}
+
+@media (max-width: 800px){
+    
+    .haqqimda{width: 35%;}
+    .body{display: flex;justify-content: center;align-items: center;}
+    .hisse1{display: flex;flex-direction: column;}
+    .hisse2{display: flex;flex-direction: column;}
+}
