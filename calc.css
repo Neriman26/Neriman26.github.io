@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reqemler button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+}
+.reqemler button :hover {
+    background-color: lightgray;
+
+}
+.emeliyatlar button:hover {
+    background-color: lightgray;
+
+}
+.emeliyatlar button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: aqua;
+
+}
+input{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.emeliyatlar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.umumi{
+    display: flex;
+  
+}
+.alt button:hover{
+    background-color: lightgray;
+}
+
+#btn1, #btn2{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+}
+#btn2{margin-left: 5px;background-color: aqua;}
+#btn2:hover{background-color: lightgray;}
+#btn1:hover{background-color: lightgray;}
+#enter{
+    width: 125px;
+    height: 60px;
+    font-size: 24px;
+    background-color: rgb(91, 211, 91); 
+}
+#enter:hover{background-color: lightgreen;}
+
+.Calculator{background-color: black;width: 260px;height: 300px;}
