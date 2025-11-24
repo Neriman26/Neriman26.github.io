@@ -1,67 +1,50 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+html,body{
+    height: 100%;
+    margin: 0;
+    padding:0;
+    background-color:#131a23;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-self: center;
 }
+input{height: 60px;width: 300px;border-radius: 5px;font-size: 30px;background-color: #131a23;color: white;}
+button{
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    font-size: 33px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(54, 46, 46);
+}
+.btn1{background-color: rgb(122, 122, 13);}
+.btn2{background-color: rgb(119, 85, 150);}
 
-.reqemler button {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-}
-.reqemler button :hover {
-    background-color: lightgray;
+.btn1:hover{background-color: rgb(222, 222, 21);}
+.btn2:hover{background-color: rgb(73, 42, 103);}
 
+button:hover{
+    background-color: rgb(109, 94, 94);
 }
-.emeliyatlar button:hover {
-    background-color: lightgray;
-
-}
-.emeliyatlar button {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    background-color: aqua;
-
-}
-input{
-    width: 250px;
-    height: 40px;
-    margin-bottom: 10px;
-    font-size: 32px;
-}
-.emeliyatlar{
+.Calculator{
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    justify-self: center;
+    gap: 8px;
+    border-color: green;
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+    border: #2c3746 5px solid;
 }
-.umumi{
-    display: flex;
-  
+h1{
+    padding-left: 90px;
+    color: white;
+    font-family: monospace;
 }
-.alt button:hover{
-    background-color: lightgray;
+@media (max-width: 400px){
+    .Calculator{padding: 5px;}
 }
-
-#btn1, #btn2{
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-}
-#btn2{margin-left: 5px;background-color: aqua;}
-#btn2:hover{background-color: lightgray;}
-#btn1:hover{background-color: lightgray;}
-#enter{
-    width: 125px;
-    height: 60px;
-    font-size: 24px;
-    background-color: rgb(91, 211, 91); 
-}
-#enter:hover{background-color: lightgreen;}
-
-.Calculator{background-color: black;width: 260px;height: 300px;}
