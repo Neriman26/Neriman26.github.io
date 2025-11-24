@@ -1,29 +1,40 @@
+
 function display(value) {
     document.getElementById("result").value += value;
+    
     
 }
 function calculate() {
     let a =document.getElementById("result").value;
-    if(a.includes('+')){
-        let b = a.split('+');
-        document.getElementById("result").value = parseFloat(b[0]) + parseFloat(b[1]);
+    const parts = a.split(/([+\-x/()])/).filter(x => x.trim() !== "");
+    let s=0;
+    if(parts[0]==='-' ){
+        parts[1]=parts[0]+parts[1];
+        parts.shift();
     }
-    else if(a.includes('-')){
-        let b = a.split('-');
-        document.getElementById("result").value = parseFloat(b[0]) - parseFloat(b[1]);
+    console.log(parts);
+    s=parseFloat(parts[0]);
+    for(let i=1;i<parts.length;i++){
+        if(parts[i]==='+'){
+            s=parseFloat(s)+parseFloat(parts[i+1]);
+            document.getElementById("result").value=s;
+        }
+        else if(parts[i]==='-'){
+            s=parseFloat(s)-parseFloat(parts[i+1]);
+            document.getElementById("result").value=s;
+        }
+        else if(parts[i]==='x'){
+            
+            s=parseFloat(s)*parseFloat(parts[i+1]);
+            document.getElementById("result").value=s;
+        }
+        else if(parts[i]==='/'){
+            s=parseFloat(s)/parseFloat(parts[i+1]);
+            document.getElementById("result").value=s;
+        }   
+        
     }
-    else if(a.includes('*')){
-        let b = a.split('*');
-        document.getElementById("result").value = parseFloat(b[0]) * parseFloat(b[1]);
-    }
-    else if(a.includes('/')){
-        let b = a.split('/');
-        document.getElementById("result").value = parseFloat(b[0]) / parseFloat(b[1]);
-    }
-    
-
 }
-
 function clearDisply() {
     document.getElementById("result").value = "";
 }
